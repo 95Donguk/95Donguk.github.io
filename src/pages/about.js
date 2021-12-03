@@ -38,7 +38,7 @@ export const pageQuery = graphql`
           }
           social {
             github
-            linkedIn
+
             email
           }
         }
@@ -73,4 +73,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`; // social - linkedIn 삭제

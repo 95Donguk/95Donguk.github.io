@@ -1,6 +1,6 @@
 ---
 emoji: 🔮
-title: Gatsby 테마로 GitHub Blog 만들기
+title: (참고 자료)Gatsby 테마로 GitHub Blog 만들기
 date: '2021-07-06 00:00:00'
 author: 줌코딩
 tags: 블로그 github-pages gatsby
@@ -102,7 +102,7 @@ npm run deploy
 
 이제 실제로 잘 배포가 되었는지 확인해봅시다. 여태까지 문제가 없으셨다면 [GitHubID].github.io에 접근했을 때 블로그가 잘 보이는 것을 확인하실 수 있으실 겁니다.
 
-![github-blog-8.png](github-blog-8.png)
+![github-blog-8.png](./github-blog-8.png)
 
 ## 8. 수정하고 배포하기
 

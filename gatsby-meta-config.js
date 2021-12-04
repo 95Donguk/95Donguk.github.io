@@ -1,5 +1,5 @@
 module.exports = {
-  title: `95Donguk`,
+  title: `95Donguk.github.io`,
   description: `김동욱의 개발수양록`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://95donguk.github.io/`,

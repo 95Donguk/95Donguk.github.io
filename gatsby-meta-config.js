@@ -14,7 +14,7 @@ module.exports = {
     name: `김동욱`,
     bio: {
       role: `개발자`,
-      description: ['협력을 중시하는', '끊임없이 공부하는', '상상을 현실로 만들고픈'],
+      description: ['협력을 중시하는', '끊임없이 공부하는', '문제해결을 즐기는', '어디서든 잘 적응하는'],
       thumbnail: 'me.png', // Path to the image in the 'asset' folder
     },
     social: {

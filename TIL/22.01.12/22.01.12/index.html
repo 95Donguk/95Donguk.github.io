@@ -64,147 +64,276 @@
         }
       }
     })
-  </script><title data-react-helmet="true">22.01.09 TIL</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="22.01.09 TIL"/><meta data-react-helmet="true" property="og:site_title" content="22.01.09 TIL"/><meta data-react-helmet="true" name="description" content="모든 개발자를 위한 HTTP 웹 기본지식 수강 URI와 웹 브라우저 요청 흐름 - URI URI(Uniform Resource Identifier) Uniform : 리소스 식별하는 통일된 방식 Resource : 자원, URI로 식별할 수 있는 모든 것(제한 없음) 자원 : 웹브라우저의 HTML파일 같은 것뿐만 아니라 실시간 교통 정보 등 우리가 구분할 수 있는 모든것 Identifier : 다른 항목과 구분하는데 필요한 정보 URI는 로케이터(locator), 이름 또는 둘 다 추가로 분류될 수 있다. 참조 : https://www.ietf.org/rfc/rfc3986.txt HTTP_URI_1_1.PNG
-HTTP_URI_1_2.PNG URL, URN 뜻 URL(Uniform Resource Locator) Locator : 리소스가 있는 위치를 지정 URN(Uniform Resource Name) Name : 리소스에 이름을 부여 위치는 변할 수 있지만, 이름은 변하지 않는…"/><meta data-react-helmet="true" property="og:description" content="모든 개발자를 위한 HTTP 웹 기본지식 수강 URI와 웹 브라우저 요청 흐름 - URI URI(Uniform Resource Identifier) Uniform : 리소스 식별하는 통일된 방식 Resource : 자원, URI로 식별할 수 있는 모든 것(제한 없음) 자원 : 웹브라우저의 HTML파일 같은 것뿐만 아니라 실시간 교통 정보 등 우리가 구분할 수 있는 모든것 Identifier : 다른 항목과 구분하는데 필요한 정보 URI는 로케이터(locator), 이름 또는 둘 다 추가로 분류될 수 있다. 참조 : https://www.ietf.org/rfc/rfc3986.txt HTTP_URI_1_1.PNG
-HTTP_URI_1_2.PNG URL, URN 뜻 URL(Uniform Resource Locator) Locator : 리소스가 있는 위치를 지정 URN(Uniform Resource Name) Name : 리소스에 이름을 부여 위치는 변할 수 있지만, 이름은 변하지 않는…"/><meta data-react-helmet="true" property="og:author" content="김동욱"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-b8159390be473bfe16e4.js"/><link as="script" rel="preload" href="/framework-e58eb96138b0d47ad785.js"/><link as="script" rel="preload" href="/app-e9195cdd11ca3cf543ce.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-84d4e59aead9346f3439.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-c624738370e47d86db02.js"/><link as="fetch" rel="preload" href="/page-data/TIL/22.01.09/22.01.09/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">95Donguk.github.io</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">❗</div><div class="info"><div class="categories"><a class="category" href="/posts/TIL">TIL</a></div></div><h1 class="title">22.01.09 TIL</h1><div class="info"><div class="author">posted by <strong>95Donguk</strong>,</div> <!-- -->January 09, 2022</div></header><div class="post-content"><div class="markdown"><h1 id="모든-개발자를-위한-http-웹-기본지식-수강" style="position:relative;"><a href="#%EB%AA%A8%EB%93%A0-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-http-%EC%9B%B9-%EA%B8%B0%EB%B3%B8%EC%A7%80%EC%8B%9D-%EC%88%98%EA%B0%95" aria-label="모든 개발자를 위한 http 웹 기본지식 수강 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC">모든 개발자를 위한 HTTP 웹 기본지식</a> 수강</h1>
+  </script><title data-react-helmet="true">22.01.12 TIL</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="22.01.12 TIL"/><meta data-react-helmet="true" property="og:site_title" content="22.01.12 TIL"/><meta data-react-helmet="true" name="description" content="모든 개발자를 위한 HTTP 웹 기본지식 수강 HTTP 메서드 활용 - 클라이언트에서 서버로 데이터 전송 클라이언트에서 서버로 데이터 전송 - 데이터 전달 방식은 크게 2가지 쿼리 파라미터를 통한 데이터 전송 GET 주로 정렬 필터(검색어, 게시판 리스트에 정렬 조건을 넣는 등) HTTP 메시지 바디를 통한 데이터 전송 POST, PUT, PATCH 회원 가입, 상품 주문, 리소스 등록, 리소스 변경 클라이언트에서 서버로 데이터 전송 - 4가지 상황 정적 데이터 조회 (GET) 이미지, 정적 텍스트 문서 동적 데이터 조회 (GET) 주로 검색, 게시판 목록에서 정렬 필터(검색어) HTML Form을 통한 데이터 전송 (POST -&gt; 데이터 변경, GET -&gt; 데이터 조회) 회원 가입, 상품 주문, 데이터 전송 HTTP API를 통한 데이터 전송 회원 가입, 상품 주문, 데이터 변경 서버 to 서버, 앱 클라이언트, 웹 클라이언트(Ajax) HTTP_method_send_data_1…"/><meta data-react-helmet="true" property="og:description" content="모든 개발자를 위한 HTTP 웹 기본지식 수강 HTTP 메서드 활용 - 클라이언트에서 서버로 데이터 전송 클라이언트에서 서버로 데이터 전송 - 데이터 전달 방식은 크게 2가지 쿼리 파라미터를 통한 데이터 전송 GET 주로 정렬 필터(검색어, 게시판 리스트에 정렬 조건을 넣는 등) HTTP 메시지 바디를 통한 데이터 전송 POST, PUT, PATCH 회원 가입, 상품 주문, 리소스 등록, 리소스 변경 클라이언트에서 서버로 데이터 전송 - 4가지 상황 정적 데이터 조회 (GET) 이미지, 정적 텍스트 문서 동적 데이터 조회 (GET) 주로 검색, 게시판 목록에서 정렬 필터(검색어) HTML Form을 통한 데이터 전송 (POST -&gt; 데이터 변경, GET -&gt; 데이터 조회) 회원 가입, 상품 주문, 데이터 전송 HTTP API를 통한 데이터 전송 회원 가입, 상품 주문, 데이터 변경 서버 to 서버, 앱 클라이언트, 웹 클라이언트(Ajax) HTTP_method_send_data_1…"/><meta data-react-helmet="true" property="og:author" content="김동욱"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-b8159390be473bfe16e4.js"/><link as="script" rel="preload" href="/framework-e58eb96138b0d47ad785.js"/><link as="script" rel="preload" href="/app-e9195cdd11ca3cf543ce.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-84d4e59aead9346f3439.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-c624738370e47d86db02.js"/><link as="fetch" rel="preload" href="/page-data/TIL/22.01.12/22.01.12/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">95Donguk.github.io</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">❗</div><div class="info"><div class="categories"><a class="category" href="/posts/TIL">TIL</a></div></div><h1 class="title">22.01.12 TIL</h1><div class="info"><div class="author">posted by <strong>95Donguk</strong>,</div> <!-- -->January 12, 2022</div></header><div class="post-content"><div class="markdown"><h1 id="모든-개발자를-위한-http-웹-기본지식-수강" style="position:relative;"><a href="#%EB%AA%A8%EB%93%A0-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-http-%EC%9B%B9-%EA%B8%B0%EB%B3%B8%EC%A7%80%EC%8B%9D-%EC%88%98%EA%B0%95" aria-label="모든 개발자를 위한 http 웹 기본지식 수강 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC">모든 개발자를 위한 HTTP 웹 기본지식</a> 수강</h1>
 <hr>
 <blockquote>
-<h2 id="uri와-웹-브라우저-요청-흐름---uri" style="position:relative;"><a href="#uri%EC%99%80-%EC%9B%B9-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%9A%94%EC%B2%AD-%ED%9D%90%EB%A6%84---uri" aria-label="uri와 웹 브라우저 요청 흐름   uri permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URI와 웹 브라우저 요청 흐름 - URI</h2>
+<h2 id="http-메서드-활용---클라이언트에서-서버로-데이터-전송" style="position:relative;"><a href="#http-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%99%9C%EC%9A%A9---%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C-%EC%84%9C%EB%B2%84%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1" aria-label="http 메서드 활용   클라이언트에서 서버로 데이터 전송 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTTP 메서드 활용 - 클라이언트에서 서버로 데이터 전송</h2>
 </blockquote>
-<h3 id="uriuniform-resource-identifier" style="position:relative;"><a href="#uriuniform-resource-identifier" aria-label="uriuniform resource identifier permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URI(Uniform Resource Identifier)</h3>
+<h3 id="클라이언트에서-서버로-데이터-전송---데이터-전달-방식은-크게-2가지" style="position:relative;"><a href="#%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C-%EC%84%9C%EB%B2%84%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1---%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EB%8B%AC-%EB%B0%A9%EC%8B%9D%EC%9D%80-%ED%81%AC%EA%B2%8C-2%EA%B0%80%EC%A7%80" aria-label="클라이언트에서 서버로 데이터 전송   데이터 전달 방식은 크게 2가지 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>클라이언트에서 서버로 데이터 전송 - 데이터 전달 방식은 크게 2가지</h3>
 <ul>
-<li>
-<p>Uniform : 리소스 식별하는 통일된 방식</p>
-</li>
-<li>
-<p>Resource : 자원, URI로 식별할 수 있는 모든 것(제한 없음)</p>
+<li>쿼리 파라미터를 통한 데이터 전송
 <ul>
-<li>자원 : 웹브라우저의 HTML파일 같은 것뿐만 아니라 실시간 교통 정보 등 우리가 구분할 수 있는 모든것</li>
+<li>GET</li>
+<li>주로 정렬 필터(검색어, 게시판 리스트에 정렬 조건을 넣는 등)</li>
 </ul>
 </li>
-<li>
-<p>Identifier : 다른 항목과 구분하는데 필요한 정보</p>
-</li>
-<li>
-<p>URI는 로케이터(locator), 이름 또는 둘 다 추가로 분류될 수 있다.</p>
+<li>HTTP 메시지 바디를 통한 데이터 전송
 <ul>
-<li>참조 : <a href="https://www.ietf.org/rfc/rfc3986.txt">https://www.ietf.org/rfc/rfc3986.txt</a></li>
+<li>POST, PUT, PATCH</li>
+<li>회원 가입, 상품 주문, 리소스 등록, 리소스 변경</li>
 </ul>
 </li>
 </ul>
-<p><img src="/2465a4c82634782911fa35ed79039a33/HTTP_URI_1_1.png" alt="HTTP_URI_1_1.PNG">
-<img src="/255a415913bfc7bbd16dc02eef583478/HTTP_URI_1_2.png" alt="HTTP_URI_1_2.PNG"></p>
-<h3 id="url-urn-뜻" style="position:relative;"><a href="#url-urn-%EB%9C%BB" aria-label="url urn 뜻 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URL, URN 뜻</h3>
+<h3 id="클라이언트에서-서버로-데이터-전송---4가지-상황" style="position:relative;"><a href="#%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C-%EC%84%9C%EB%B2%84%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1---4%EA%B0%80%EC%A7%80-%EC%83%81%ED%99%A9" aria-label="클라이언트에서 서버로 데이터 전송   4가지 상황 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>클라이언트에서 서버로 데이터 전송 - 4가지 상황</h3>
 <ul>
-<li>URL(Uniform Resource Locator)
+<li>정적 데이터 조회 (GET)
 <ul>
-<li>Locator : 리소스가 있는 위치를 지정</li>
+<li>이미지, 정적 텍스트 문서</li>
 </ul>
 </li>
-<li>URN(Uniform Resource Name)
+<li>동적 데이터 조회 (GET)
 <ul>
-<li>Name : 리소스에 이름을 부여</li>
+<li>주로 검색, 게시판 목록에서 정렬 필터(검색어)</li>
 </ul>
 </li>
-<li>위치는 변할 수 있지만, 이름은 변하지 않는다.</li>
-<li>URN 이름만으로 실제 리소스를 찾을 수 있는 방법이 보편화 되지 않았다.</li>
-</ul>
-<h3 id="url-전체-문법" style="position:relative;"><a href="#url-%EC%A0%84%EC%B2%B4-%EB%AC%B8%EB%B2%95" aria-label="url 전체 문법 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URL 전체 문법</h3>
+<li>HTML Form을 통한 데이터 전송 (POST -> 데이터 변경, GET -> 데이터 조회)
 <ul>
-<li>
-<p>scheme://[userinfo@]host[:port][/path][?query][#fragment]</p>
-</li>
-<li>
-<p><a href="https://www.google.com:433/search?q=hello&#x26;hl=ko">https://www.google.com:433/search?q=hello&#x26;hl=ko</a></p>
-<ul>
-<li>scheme
-<ul>
-<li>주로 프로토콜 사용한다.</li>
-<li>프로토콜 : 어떤 방식으로 자원에 접근 한 것인가 하는 클라이언트와 서버 간의 약속(예 : http, https, ftp 등등)</li>
-<li>http는 80 포트, http는 443 포트를 주로 사용한다. 포트는 생략 가능하다.</li>
-<li>https는 http에 보안을 추가한 프로토콜이다.(HTTP Secure)</li>
+<li>회원 가입, 상품 주문, 데이터 전송</li>
 </ul>
 </li>
-<li>userinfo
+<li>HTTP API를 통한 데이터 전송
 <ul>
-<li>URL에 사용자정보를 포함해서 인증한다.</li>
-<li>거의 사용하지 않는다.</li>
+<li>회원 가입, 상품 주문, 데이터 변경</li>
+<li>서버 to 서버, 앱 클라이언트, 웹 클라이언트(Ajax)</li>
 </ul>
 </li>
-<li>host
+</ul>
+<p><img src="/2171d9eed8db4bbd1dfd34d506018b5e/HTTP_method_send_data_1.png" alt="HTTP_method_send_data_1.PNG"></p>
+<h3 id="정적-데이터-조회---정리" style="position:relative;"><a href="#%EC%A0%95%EC%A0%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C---%EC%A0%95%EB%A6%AC" aria-label="정적 데이터 조회   정리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>정적 데이터 조회 - 정리</h3>
 <ul>
-<li>호스트명</li>
-<li>도메인명 또는 IP 주소를 직접 사용가능하다.</li>
+<li>이미지, 정적 텍스트 문서</li>
+<li>조회는 GET 사용</li>
+<li>정적 데이터는 일반적으로 쿼리 파라미터 없이 리소스 경로로 단순하게 조회 가능</li>
+</ul>
+<p><img src="/f9a436e8ebb91abfcd4812b6ff0db175/HTTP_method_send_data_2.png" alt="HTTP_method_send_data_2.PNG"></p>
+<h3 id="동적-데이터-조회---정리" style="position:relative;"><a href="#%EB%8F%99%EC%A0%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C---%EC%A0%95%EB%A6%AC" aria-label="동적 데이터 조회   정리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>동적 데이터 조회 - 정리</h3>
+<ul>
+<li>주로 검색, 게시판 목록에서 정렬 필터(검색어)</li>
+<li>조회 조건을 줄여주는 필터, 조회 결과를 정렬하는 정렬 조건에 주로 사용</li>
+<li>조회는 GET 사용</li>
+<li>GET은 쿼리 파라미터 사용해서 데이터를 전달</li>
+</ul>
+<p><img src="/caccb0e0c8648be6ea313672854044e1/HTTP_method_send_data_3.png" alt="HTTP_method_send_data_3.PNG">
+<img src="/df792dcdd81f30d63fcfc84bab6f7ddd/HTTP_method_send_data_4.png" alt="HTTP_method_send_data_4.PNG">
+<img src="/93d440cb3df337c99b4a0e4b56fa0ebc/HTTP_method_send_data_5.png" alt="HTTP_method_send_data_5.PNG">
+<img src="/518760bdca327c3e6eaeb54f8ccef6a5/HTTP_method_send_data_6.png" alt="HTTP_method_send_data_6.PNG"></p>
+<h3 id="html-form-데이터-전송---정리" style="position:relative;"><a href="#html-form-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1---%EC%A0%95%EB%A6%AC" aria-label="html form 데이터 전송   정리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTML Form 데이터 전송 - 정리</h3>
+<ul>
+<li>HTML Form submit시 POST 전송
+<ul>
+<li>예)회원 가입, 상품 주문, 데이터 변경</li>
 </ul>
 </li>
-<li>port
+<li>Content-Type: application/x-www-form-urlencoded 사용 (default)
 <ul>
-<li>접속 포트</li>
-<li>일반적으로 생략한다. 생략시 http는 80, https는 443</li>
-<li>단, 특정서버에 따러 접근할 때 입력하기도 한다.</li>
+<li>form의 내용을 메시지 바디를 통해서 전송(key=value, 쿼리 파라미터 형식)</li>
+<li>전송 데이터를 url encoding 처리
+<ul>
+<li>예) abc김 -> abc%EA%B9%80 (UTF-8 형식)</li>
 </ul>
 </li>
-<li>path
-<ul>
-<li>리소스 경로(path), 계층적 구조이다.</li>
-<li>예 : /home/file1.jpg</li>
 </ul>
 </li>
-<li>query
+<li>HTML Form은 GET 전송도 가능 (쿼리 파라미터 형식)</li>
+<li>Content-Type: multipart/form-data
 <ul>
-<li>key = value 형태</li>
-<li>?로 시작, &#x26;로 추가 가능(?keyA=valueA&#x26;keyB=valueB)</li>
-<li>query parameter, query string 등으로 불림, 웹 서버에 제공하는 파라미터, 문자 형태이다.</li>
+<li>파일 업로드 같은 바이너리 데이터 전송시 사용</li>
+<li>다른 종류의 여러 파일과 폼의 내용 함께 전송 가능(그래서 이름이 multipart)</li>
 </ul>
 </li>
-<li>fragment
+</ul>
+<p>*참고 : HTML Form 전송은 GET, POST만 지원</p>
+<p><img src="/d2bf393043b24cd260c8d817492666dd/HTTP_method_send_data_7.png" alt="HTTP_method_send_data_7.PNG"></p>
+<h3 id="http-api-데이터-전송---정리" style="position:relative;"><a href="#http-api-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1---%EC%A0%95%EB%A6%AC" aria-label="http api 데이터 전송   정리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTTP API 데이터 전송 - 정리</h3>
 <ul>
-<li>html 내부 북마크 등에 사용한다.</li>
-<li>서버에 전송하는 정보는 아니다.</li>
+<li>서버 TO 서버
+<ul>
+<li>백엔드 시스템 통신</li>
 </ul>
 </li>
+<li>앱 클라이언트
+<ul>
+<li>아이폰, 안드로이드</li>
+</ul>
+</li>
+<li>웹 클라이언트
+<ul>
+<li>HTML에서 Form 전송 대신 자바스크립트를 통한 통신에 사용(AJAX)</li>
+<li>예) React, VueJs, 같은 웹 클라이언트와 API 통신</li>
+</ul>
+</li>
+<li>POST, PUT, PATCH : 메시지 바디를 통해 데이터 전송</li>
+<li>GET : 조회, 쿼리 파라미터로 데이터 전달</li>
+<li>Content-Type: application/json을 주로 사용 (사실상 표준)
+<ul>
+<li>TEXT, XML, JSON 등등</li>
 </ul>
 </li>
 </ul>
 <blockquote>
-<h2 id="uri와-웹-브라우저-요청-흐름---웹-브라우저-요청-흐름" style="position:relative;"><a href="#uri%EC%99%80-%EC%9B%B9-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%9A%94%EC%B2%AD-%ED%9D%90%EB%A6%84---%EC%9B%B9-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%9A%94%EC%B2%AD-%ED%9D%90%EB%A6%84" aria-label="uri와 웹 브라우저 요청 흐름   웹 브라우저 요청 흐름 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>URI와 웹 브라우저 요청 흐름 - 웹 브라우저 요청 흐름</h2>
+<h2 id="http-메서드-활용---http-설계-예시" style="position:relative;"><a href="#http-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%99%9C%EC%9A%A9---http-%EC%84%A4%EA%B3%84-%EC%98%88%EC%8B%9C" aria-label="http 메서드 활용   http 설계 예시 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTTP 메서드 활용 - HTTP 설계 예시</h2>
 </blockquote>
-<p><img src="/c2a9d902bf27a3e55ae5e6da908e26bc/HTTP_URI_2_1.png" alt="HTTP_URI_2_1.PNG"></p>
-<ol>
-<li>구글 서버 찾기 위해 DNS 조회</li>
-<li>PORT 조회</li>
-<li>HTTP 요청 메시지 생성</li>
-</ol>
-<p><img src="/67ecc6c72943cc958f7d6c3bb04de28e/HTTP_URI_2_2.png" alt="HTTP_URI_2_2.PNG"></p>
 <ul>
-<li>GET 명령어, 쿼리 정보, HTTP 버전 정보, HOST 정보</li>
-</ul>
-<p><img src="/fc4efc87857786e5756affa1fafa96dd/HTTP_URI_2_3.png" alt="HTTP_URI_2_3.PNG"></p>
-<ol>
-<li>
-<p>웹 브라우저가 HTTP 메시지 생성</p>
-</li>
-<li>
-<p>SOCKET 라이브러리를 통해 전달</p>
-<ol>
-<li>TCP/IP 연결(TCP 3 way handshake)</li>
-<li>데이터 전달</li>
-</ol>
-</li>
-<li>
-<p>HTTP 메시지를 포함한 TCP/IP 패킷 생성</p>
-</li>
-</ol>
-<p><img src="/705e421cee0c36d63ad5633fdfbdd61e/HTTP_URI_2_4.png" alt="HTTP_URI_2_4.PNG"></p>
-<p><img src="/2a924342f34804dc8ec16237b7db3e82/HTTP_URI_2_5.png" alt="HTTP_URI_2_5.PNG"></p>
-<p><img src="/56a76c52e0573e395e701117a3733160/HTTP_URI_2_6.png" alt="HTTP_URI_2_6.PNG"></p>
+<li>HTTP API - 컬렉션 (<em>실무에서 자주 사용</em>)
 <ul>
-<li>TCP/IP 패킷을 버리고 HTTP 메시지 해석</li>
-<li>메시지에 요청하는 데이터를 찾음.</li>
+<li>POST 기반 등록</li>
+<li>예) 회원 관리 API 제공</li>
 </ul>
-<p><img src="/a01aa7860f4a07b8685a6f597f2dfe3e/HTTP_URI_2_7.png" alt="HTTP_URI_2_7.PNG"></p>
-<p><img src="/e975568cad48f40fb98257e0d9ab8477/HTTP_URI_2_8.png" alt="HTTP_URI_2_8.PNG"></p>
-<p><img src="/b5d673eadb55c7465ac07d1986d6220e/HTTP_URI_2_9.png" alt="HTTP_URI_2_9.PNG"></p>
-<p><img src="/6adf490a35db20971c27272d7259eff3/HTTP_URI_2_10.png" alt="HTTP_URI_2_10.PNG"></p>
+</li>
+<li>HTTP API - 스토어
+<ul>
+<li>PUT 기반 등록</li>
+<li>예) 정적 컨텐츠 관리, 원격 파일 관리</li>
+</ul>
+</li>
+<li>HTML FORM 사용
+<ul>
+<li>웹 페이지 회원 관리</li>
+<li>GET, POST만 지원</li>
+</ul>
+</li>
+</ul>
+<h3 id="회원-관리-시스템---api-설계---post-기반-등록" style="position:relative;"><a href="#%ED%9A%8C%EC%9B%90-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C---api-%EC%84%A4%EA%B3%84---post-%EA%B8%B0%EB%B0%98-%EB%93%B1%EB%A1%9D" aria-label="회원 관리 시스템   api 설계   post 기반 등록 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>회원 관리 시스템 - API 설계 - POST 기반 등록</h3>
+<ul>
+<li><strong>회원</strong> 목록 /members -> <strong>GET</strong></li>
+<li><strong>회원</strong> 등록 /members -> <strong>POST</strong></li>
+<li><strong>회원</strong> 조회 /members/{id} -> <strong>GET</strong></li>
+<li><strong>회원</strong> 수정 /members/{id} -> <strong>PATCH, PUT, POST</strong></li>
+<li><strong>회원</strong> 삭제 /members/{id} -> <strong>DELETE</strong></li>
+</ul>
+<h3 id="회원-관리-시스템---post---신규-자원-등록-특징" style="position:relative;"><a href="#%ED%9A%8C%EC%9B%90-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C---post---%EC%8B%A0%EA%B7%9C-%EC%9E%90%EC%9B%90-%EB%93%B1%EB%A1%9D-%ED%8A%B9%EC%A7%95" aria-label="회원 관리 시스템   post   신규 자원 등록 특징 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>회원 관리 시스템 - POST - 신규 자원 등록 특징</h3>
+<ul>
+<li><code class="language-text">클라이언트는 등록될 리소스의 URI를 모른다</code>
+<ul>
+<li>회원 등록 /members -> POST</li>
+<li>POST /members</li>
+</ul>
+</li>
+<li>서버가 새로 등록된 리소스 URI를 생성해준다.
+<ul>
+<li>HTTP/1.1 201 Created<br>Location: <strong>/members/100</strong></li>
+</ul>
+</li>
+<li>컬렉션(Collection)
+<ul>
+<li>서버가 관리하는 리소스 디렉토리</li>
+<li>서버가 리소스의 URI를 생성하고 관리</li>
+<li>여기서 컬렉션은 /members</li>
+</ul>
+</li>
+</ul>
+<h3 id="파일-관리-시스템---api-설계---put-기반-등록" style="position:relative;"><a href="#%ED%8C%8C%EC%9D%BC-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C---api-%EC%84%A4%EA%B3%84---put-%EA%B8%B0%EB%B0%98-%EB%93%B1%EB%A1%9D" aria-label="파일 관리 시스템   api 설계   put 기반 등록 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>파일 관리 시스템 - API 설계 - PUT 기반 등록</h3>
+<ul>
+<li><strong>파일</strong> 목록 /files -> <strong>GET</strong></li>
+<li><strong>파일</strong> 조회 /files/{filename} -> <strong>GET</strong></li>
+<li><strong>파일</strong> 등록 /files/{filename} -> <strong>PUT</strong></li>
+<li><strong>파일</strong> 삭제 -> /files/{filename} -> <strong>DELETE</strong></li>
+<li><strong>파일</strong> 대량 등록 /files -> <strong>POST</strong></li>
+</ul>
+<h3 id="파일-관리-시스템---put---신규-자원-등록-특징" style="position:relative;"><a href="#%ED%8C%8C%EC%9D%BC-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C---put---%EC%8B%A0%EA%B7%9C-%EC%9E%90%EC%9B%90-%EB%93%B1%EB%A1%9D-%ED%8A%B9%EC%A7%95" aria-label="파일 관리 시스템   put   신규 자원 등록 특징 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>파일 관리 시스템 - PUT - 신규 자원 등록 특징</h3>
+<ul>
+<li><code class="language-text">클라이언트가 리소스 URI를 알고 있어야 한다.</code>
+<ul>
+<li>파일 등록 /files/{filename} -> PUT</li>
+<li>PUT <strong>/files/star.jpg</strong></li>
+</ul>
+</li>
+<li>클라이언트가 직접 리소스의 URI를 지정한다.</li>
+<li>스토어(Store)
+<ul>
+<li>클라이언트가 관리하는 리소스 저장소</li>
+<li>클라이언트가 리소스의 URI를 알고 관리</li>
+<li>여기서 스토어는 /files</li>
+</ul>
+</li>
+</ul>
+<h3 id="html-form-사용" style="position:relative;"><a href="#html-form-%EC%82%AC%EC%9A%A9" aria-label="html form 사용 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTML FORM 사용</h3>
+<ul>
+<li>HTML FORM은 GET, POST만 지원</li>
+<li>AJAX 같은 기술을 사용해서 해결 가능 -> 회원 API 참고</li>
+<li>여기서는 순수 HTML, HTML FORM 이야기</li>
+<li><code class="language-text">컨트롤 URI</code>
+<ul>
+<li>GET, POST만 지원하므로 제약이 있음</li>
+<li>이런 제약을 해결하기 위해 동사로 된 리소스 경로 사용</li>
+<li>POST의 /new, /edit, /delete가 컨트롤 URI</li>
+<li>HTTP 메서드로 해결하기 애매한 경우 사용(HTTP API 포함)</li>
+<li><em>실무에서 자주 사용하지만 무작정 사용하면 안 된다. (최대한 리소스라는 개념을 가지고 URI를 설계)</em></li>
+</ul>
+</li>
+</ul>
 <hr>
-<h2 id="-틀렸거나-잘못된-정보가-있다면-망설임-없이-댓글로-알려주세요" style="position:relative;"><a href="#-%ED%8B%80%EB%A0%B8%EA%B1%B0%EB%82%98-%EC%9E%98%EB%AA%BB%EB%90%9C-%EC%A0%95%EB%B3%B4%EA%B0%80-%EC%9E%88%EB%8B%A4%EB%A9%B4-%EB%A7%9D%EC%84%A4%EC%9E%84-%EC%97%86%EC%9D%B4-%EB%8C%93%EA%B8%80%EB%A1%9C-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94" aria-label=" 틀렸거나 잘못된 정보가 있다면 망설임 없이 댓글로 알려주세요 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 틀렸거나 잘못된 정보가 있다면 망설임 없이 댓글로 알려주세요!</h2></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/TIL/22.01.08/22.01.08/"><div class="direction">이전 글</div><div class="title">22.01.08 TIL</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/TIL/22.01.10/22.01.10/"><div class="direction">다음 글</div><div class="title">22.01.10 TIL</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/95Donguk">김동욱</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/TIL/22.01.09/22.01.09/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-5876fb92ac28326b2d83.js"],"app":["/app-e9195cdd11ca3cf543ce.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-93a81e71eb456ad78cde.js"],"component---src-pages-404-js":["/component---src-pages-404-js-2abf75251e652b59d61c.js"],"component---src-pages-about-js":["/component---src-pages-about-js-364edbf895f0064de6b7.js"],"component---src-pages-index-js":["/component---src-pages-index-js-32b68a8b93a7afb6e516.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-c624738370e47d86db02.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-12a89df4addce7aceedd.js"]};/*]]>*/</script><script src="/polyfill-5876fb92ac28326b2d83.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-c624738370e47d86db02.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-84d4e59aead9346f3439.js" async=""></script><script src="/app-e9195cdd11ca3cf543ce.js" async=""></script><script src="/framework-e58eb96138b0d47ad785.js" async=""></script><script src="/webpack-runtime-b8159390be473bfe16e4.js" async=""></script></body></html>
+<ul>
+<li><strong>회원</strong> 목록 /members -> <strong>GET</strong></li>
+<li><strong>회원</strong> 등록 폼 /members/new -> <strong>GET</strong></li>
+<li><strong>회원</strong> 등록 /members/new(추천), /members -> <strong>POST</strong></li>
+<li><strong>회원</strong> 조회 /members/{id} -> <strong>GET</strong></li>
+<li><strong>회원</strong> 수정 폼 /members/{id}/edit -> <strong>GET</strong></li>
+<li><strong>회원</strong> 수정 /members/{id}/edit(추천), /members/{id} -> <strong>POST</strong></li>
+<li><strong>회원</strong> 삭제 /members/{id}/delete -> <strong>POST</strong></li>
+</ul>
+<hr>
+<h3 id="정리" style="position:relative;"><a href="#%EC%A0%95%EB%A6%AC" aria-label="정리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>정리</h3>
+<ul>
+<li><strong>HTTP API - 컬렉션</strong>
+<ul>
+<li><strong>POST 기반 등록</strong></li>
+<li><strong>서버가 리소스 URI 결정</strong></li>
+</ul>
+</li>
+<li><strong>HTTP API - 스토어</strong>
+<ul>
+<li><strong>PUT 기반 등록</strong></li>
+<li><strong>클라이언트가 리소스 URI 결정</strong></li>
+</ul>
+</li>
+<li><strong>HTML FORM 사용</strong>
+<ul>
+<li>순수 HTML + HTML form 사용</li>
+<li>GET, POST만 지원</li>
+</ul>
+</li>
+<li>참고하면 좋은 URI 설계 개념 (참조 : <a href="https://restfulapi.net/resource-naming">https://restfulapi.net/resource-naming</a>)
+<ul>
+<li>문서(document)
+<ul>
+<li>단일 개념(파일 하나, 객체 인스턴스, 데이터베이스 row)</li>
+<li>예) /members/100, files/star.jpg</li>
+</ul>
+</li>
+<li>컬렉션(collection) <em>- 주로 사용</em>
+<ul>
+<li>서버가 관리하는 리소스 디렉터리</li>
+<li>서버가 리소스의 URI를 생성하고 관리 (클라이언트가 서버에게 요청)</li>
+<li>예) /members</li>
+</ul>
+</li>
+<li>스토어(store)
+<ul>
+<li>클라이언트가 관리하는 자원 저장소</li>
+<li>클라이언트가 리소스의 URI를 알고 관리</li>
+<li>예) /files</li>
+</ul>
+</li>
+<li>컨트롤러(controller), 컨트롤 URI
+<ul>
+<li>문서, 컬렉션, 스토어로 해결하기 어려운 추가 프로세스 실행</li>
+<li>동사를 직접 사용</li>
+<li>예) /members/{id}/delete</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="-틀렸거나-잘못된-정보가-있다면-망설임-없이-댓글로-알려주세요" style="position:relative;"><a href="#-%ED%8B%80%EB%A0%B8%EA%B1%B0%EB%82%98-%EC%9E%98%EB%AA%BB%EB%90%9C-%EC%A0%95%EB%B3%B4%EA%B0%80-%EC%9E%88%EB%8B%A4%EB%A9%B4-%EB%A7%9D%EC%84%A4%EC%9E%84-%EC%97%86%EC%9D%B4-%EB%8C%93%EA%B8%80%EB%A1%9C-%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94" aria-label=" 틀렸거나 잘못된 정보가 있다면 망설임 없이 댓글로 알려주세요 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 틀렸거나 잘못된 정보가 있다면 망설임 없이 댓글로 알려주세요!</h2></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/TIL/22.01.11/22.01.11/"><div class="direction">이전 글</div><div class="title">22.01.11 TIL</div></a></div><div class="post-navigator-card-wrapper"></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2022<!-- --> <a href="https://github.com/95Donguk">김동욱</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/TIL/22.01.12/22.01.12/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-5876fb92ac28326b2d83.js"],"app":["/app-e9195cdd11ca3cf543ce.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-93a81e71eb456ad78cde.js"],"component---src-pages-404-js":["/component---src-pages-404-js-2abf75251e652b59d61c.js"],"component---src-pages-about-js":["/component---src-pages-about-js-364edbf895f0064de6b7.js"],"component---src-pages-index-js":["/component---src-pages-index-js-32b68a8b93a7afb6e516.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-c624738370e47d86db02.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-12a89df4addce7aceedd.js"]};/*]]>*/</script><script src="/polyfill-5876fb92ac28326b2d83.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-c624738370e47d86db02.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-84d4e59aead9346f3439.js" async=""></script><script src="/app-e9195cdd11ca3cf543ce.js" async=""></script><script src="/framework-e58eb96138b0d47ad785.js" async=""></script><script src="/webpack-runtime-b8159390be473bfe16e4.js" async=""></script></body></html>

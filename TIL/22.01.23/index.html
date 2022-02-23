@@ -79,7 +79,7 @@
 			<span class="token keyword">if</span> <span class="token punctuation">(</span>current<span class="token operator">==</span>tail<span class="token punctuation">)</span> <span class="token comment">// 마지막 노드 제거</span>
 				<span class="token keyword">return</span> <span class="token function">removeLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 			<span class="token comment">// 중간 노드 제거</span>
-			currentsize<span class="token operator">--</span><span class="token punctuation">;</span>
+			currentSize<span class="token operator">--</span><span class="token punctuation">;</span>
 			previous<span class="token punctuation">.</span>next<span class="token operator">=</span>current<span class="token punctuation">.</span>next<span class="token punctuation">;</span> <span class="token comment">// 2. remove</span>
 			<span class="token keyword">return</span> current<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
 			<span class="token punctuation">}</span>

@@ -204,7 +204,7 @@
 </li>
 </ul>
 <p><img src="/b0c16e64d126342db8519fbd9f51a8c0/HTTP_header_representation_content-language.png" alt="HTTP_header_representation_content-language.PNG"></p>
-<h3 id="content-langth--표현-데이터의-길이" style="position:relative;"><a href="#content-langth--%ED%91%9C%ED%98%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EA%B8%B8%EC%9D%B4" aria-label="content langth  표현 데이터의 길이 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Content-Langth : 표현 데이터의 길이</h3>
+<h3 id="content-length--표현-데이터의-길이" style="position:relative;"><a href="#content-length--%ED%91%9C%ED%98%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EA%B8%B8%EC%9D%B4" aria-label="content length  표현 데이터의 길이 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Content-Length : 표현 데이터의 길이</h3>
 <ul>
 <li>바이트 단위</li>
 <li>Transfer-Encoding(전송 코딩)을 사용하면 Content-Length를 사용하면 안 됨</li>
@@ -388,7 +388,7 @@
 <h3 id="www-authenticate--리소스-접근-시-필요한-인증-방법-정의" style="position:relative;"><a href="#www-authenticate--%EB%A6%AC%EC%86%8C%EC%8A%A4-%EC%A0%91%EA%B7%BC-%EC%8B%9C-%ED%95%84%EC%9A%94%ED%95%9C-%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EB%B2%95-%EC%A0%95%EC%9D%98" aria-label="www authenticate  리소스 접근 시 필요한 인증 방법 정의 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>WWW-Authenticate : 리소스 접근 시 필요한 인증 방법 정의</h3>
 <ul>
 <li>401 Unauthorized 응답과 함께 사용</li>
-<li>WWW-Authenticate: Newauth realm=“apps”, type=1, title=“Login to “apps"", Basic realm=“simple” (참고 : <a href="https://tools.ietf.org/html/rfc7235">https://tools.ietf.org/html/rfc7235</a>)</li>
+<li>WWW-Authenticate: Newauth realm=“apps”, type=1, title=“Login to \“apps\"", Basic realm=“simple” (참고 : <a href="https://tools.ietf.org/html/rfc7235">https://tools.ietf.org/html/rfc7235</a>)</li>
 </ul>
 <blockquote>
 <h2 id="http-헤더1---일반-헤더---쿠키" style="position:relative;"><a href="#http-%ED%97%A4%EB%8D%941---%EC%9D%BC%EB%B0%98-%ED%97%A4%EB%8D%94---%EC%BF%A0%ED%82%A4" aria-label="http 헤더1   일반 헤더   쿠키 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTTP 헤더1 - 일반 헤더 - 쿠키</h2>
@@ -504,7 +504,7 @@
 <li>Secure
 <ul>
 <li>쿠키는 http, https를 구분하지 않고 전송</li>
-<li>Sevure를 적용하면 https인 경우에만 전송</li>
+<li>Secure를 적용하면 https인 경우에만 전송</li>
 </ul>
 </li>
 <li>HttpOnly

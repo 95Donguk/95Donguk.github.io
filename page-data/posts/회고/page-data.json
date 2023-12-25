@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-js",
+    "path": "/posts/회고",
+    "result": {"pageContext":{"currentCategory":"회고","categories":["All","회고","Spring","TIL"],"edges":[{"node":{"id":"54d739a3-632e-546a-9631-42ea6bb95695","excerpt":"2023년 회고 제목에선 거창하게 라고 작성했지만, 막상 7개월 동안 교육과정에서 느낀 점을 작성하게 될 것 같다. 작년 우아한테크코스 지원 이후로 다시 해군 전산 군무원 준비를 조금씩 다시 시작하게 됐다. 왜냐하면 작년 내가 웹 개발을 처음 배웠던 곳인 부트캠프에서부터 우아한테크코스까지 개발을 좋아하고 재능이 많은 사람들을 보았기 때문에 재능 하나 없고 내세울 건 오직 노력밖에 없는 전공자인 내가 라는 의문점을 가지게 됐고 그래서 개발과 점점 멀어지게 된 것 같다. 그렇게 군무원 준비하다가 5월 초쯤 부트캠프에서 같이 공부했던 사람들의 연락을 받고 힘을 얻어 다시 개발자의 길로 들어서기로 했다. 그리고 한 채용사이트에서 의 교육생을 모집한다는 글을 보고 요즘 웹 개발이 클라우드 기반으로 진행하다 보니 클라우드 환경에 관해 공부하면 좋겠다는 생각에 지원하게 됐다. 교육과정 후기 아쉬움이 참 많다. 그 순간순간마다 최선을 다했다고 생각했지만 돌이켜보면 좀 더 노력할 걸 이라는 아쉬움…","fields":{"slug":"/Memoirs/2023/"},"frontmatter":{"categories":"회고","title":"2023년 회고","date":"December 24, 2023"}},"next":{"fields":{"slug":"/Spring/Convert_String_to_LocalDateTime/"}},"previous":null}]}},
+    "staticQueryHashes": ["1073350324","1956554647","2938748437"]}
